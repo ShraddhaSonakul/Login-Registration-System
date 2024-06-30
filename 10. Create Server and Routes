@@ -1,0 +1,6 @@
+auth-server/
+  models/
+    User.js
+  routes/
+    userRoutes.js
+  server.js
