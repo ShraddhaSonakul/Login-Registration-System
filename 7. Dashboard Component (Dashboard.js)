@@ -1,0 +1,31 @@
+import React from 'react';
+import { Table, Container } from 'react-bootstrap';
+
+const Dashboard = () => {
+  const user = JSON.parse(localStorage.getItem('user'));
+  return (
+    <Container>
+      <h2>User Dashboard</h2>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>{user.name}</td>
+            <td>{new Date(user.dob).toLocaleDateString()}</td>
+            <td>{user.email}</td>
+          </tr>
+        </tbody>
+      </Table>
+    </Container>
+  );
+};
+
+export default Dashboard;
