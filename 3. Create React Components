@@ -1,0 +1,8 @@
+src/
+  components/
+    Login.js
+    Register.js
+    Dashboard.js
+    ProtectedRoute.js
+  App.js
+  index.js
